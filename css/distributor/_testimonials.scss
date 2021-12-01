@@ -1,0 +1,77 @@
+.testimonials_section{
+    width: 100%;
+    .main_section{
+        width: 100%;
+        .portion{
+            width: 100%;
+            .avator_back{
+                .icon_back{
+                    width: 186px;
+                    height: 186px;
+                    background: linear-gradient(180deg, #F15A29, #DD2006);
+                    border-radius: 31% 69% 44% 56% / 54% 60% 40% 46%;
+                    position: relative;
+                    background-color: transparent;
+                    img{
+                        width: auto;
+                        display: block;
+                    }
+                    
+                }
+            }
+            .content_area{
+                padding-left: 28px;
+                .details{
+                    margin-top: 30px;
+                    h3{
+                        font-size: 24px;
+                        color: var(--primary-color);
+                        font-family: 'GoodKarmaSmooth-Regular';
+                        span{
+                            font-size: 16px;
+                            font-family: var(--regular-font);
+                            color: var(--secondary-color);
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+        .owl-dots{
+            margin-top: 60px;
+            button{
+                span{
+                    background-color: var(--white-color);
+                    border: var(--primary-color) 2px solid;
+                    width: 10px;
+                    height: 10px;
+                    transition: ALL .5S ease-in-out;
+                }
+                &.active{
+                    span{
+                        width: 42px;
+                        background-color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .testimonials_section{
+        .main_section{
+            .portion{
+                text-align: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                .content_area{
+                    padding-top: 30px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

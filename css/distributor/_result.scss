@@ -1,0 +1,101 @@
+.result_back{
+    width: 100%;
+    .main_details_back{
+        width: 100%;
+        height: 500px;
+        .portion{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: var(--button-color1);
+            background: -moz-linear-gradient(left,  var(--button-color1) 0%, var(--button-color2) 100%);
+            background: -webkit-linear-gradient(left,  var(--button-color1) 0%, var(--button-color2) 100%); 
+            background: linear-gradient(to right,  var(--button-color1) 0%, var(--button-color2) 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--button-color1)', endColorstr=' var(--button-color2)',GradientType=1 );
+            text-align: center;
+            position: relative;
+            span{
+                width: 150px;
+                height: 100px;
+                background-color: #000;
+                
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                &::before{
+                    width: 120%;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 100%;
+                    content: "";
+                    position: absolute;
+                    top: -10px;
+                    left: -13px;
+                }
+                &::after{
+                    width: 120%;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 100%;
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    left: -13px;
+                }
+            } 
+            &:nth-child(2n+2){
+                align-self: flex-end;
+            }
+            .main{
+                width: 240px;
+                height: 240px;
+                background-color: var(--white-color);
+                border-radius: 100%;
+            }
+            &:first-child{
+                background:#f2592a;
+                background: -moz-linear-gradient(left,  #f2592a 0%, #f34a37 100%);
+                background: -webkit-linear-gradient(left,  #f2592a 0%, #f34a37 100%); 
+                background: linear-gradient(to right,  #f2592a 0%, #f34a37 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2592a', endColorstr=' #f34a37',GradientType=1 ); 
+            }
+            &:nth-child(2){
+                background:#f5443d;
+                background: -moz-linear-gradient(left,  #f5443d 0%, #f7344b 100%);
+                background: -webkit-linear-gradient(left,  #f5443d 0%, #f7344b 100%); 
+                background: linear-gradient(to right,  #f5443d 0%, #f7344b 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5443d', endColorstr=' #f7344b',GradientType=1 ); 
+            }
+            &:nth-child(3){
+                background:#f93050;
+                background: -moz-linear-gradient(left,  #f93050 0%, #fb1f5e 100%);
+                background: -webkit-linear-gradient(left,  #f93050 0%, #fb1f5e 100%); 
+                background: linear-gradient(to right,  #f93050 0%, #fb1f5e 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f93050', endColorstr=' #fb1f5e',GradientType=1 ); 
+            }
+            &:last-child{
+                background:#fc1a64;
+                background: -moz-linear-gradient(left,  #fc1a64 0%, #ff0a72 100%);
+                background: -webkit-linear-gradient(left,  #fc1a64 0%, #ff0a72 100%); 
+                background: linear-gradient(to right,  #fc1a64 0%, #ff0a72 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1a64', endColorstr=' #ff0a72',GradientType=1 ); 
+            }
+            h3{
+                font-size: 26px;
+                font-family: var(--heavy-font);
+                margin-top: 10px;
+            }
+            p{
+                font-size: 17px;
+                padding: 0 30px
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1024px){
+    .result_back .main_details_back{
+        display: none !important;
+    }
+}
